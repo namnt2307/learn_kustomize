@@ -1,0 +1,15 @@
+bases:
+- ../../templates
+patches:
+- replica_count.yml
+- replica_svc.yml
+namePrefix: prod
+### add label for resource 
+#commonLabels:
+### co the dung
+## replicas:  
+## - name: deployment name
+##   count: 10 
+#### https://kubectl.docs.kubernetes.io/references/kustomize/
+   
+

@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy
+spec:
+  replicas: 5
+  strategy:
+    rollingUpdate: 
+      maxUnavailable: 1
+  template:
+    spec:
+      containers:
+        - name: hello
+          ports:
+            - containerPort: 81

@@ -1,0 +1,5 @@
+bases:
+- ../../templates
+patches:
+- replica.yml
+namePrefix: staging
