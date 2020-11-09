@@ -6,10 +6,9 @@ spec:
   replicas: 5
   strategy:
     rollingUpdate: 
+      maxSurge: 3
       maxUnavailable: 1
   template:
     spec:
       containers:
-        - name: hello
-          ports:
-            - containerPort: 81
+        - name: hemlo
